@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --cor-texto-principal: #fff; 
+    --cor-texto-secundaria: #000000; 
+    --cor-hover: #272727;
+
+    --fonte: 'Roboto';
+}
+
+body{
+    /*background-image: url(../imgs/red-and-black-barbed-wire-2022tjs994mcbzvw.png);
+    background-repeat: repeat;*/
+    background-color: #000000;
+}
+
+header{
+    background-color: #e50914;
+}
+
+.cabecalho{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.7em 2em;
+    
+}
+
+.cabecalho__titulo{
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte);
+    font-weight: 500;
+}
+
+.cabecalho__menu{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    font-family: var(--fonte);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.cabecalho__menu__link{
+    color: var(--cor-texto-secundaria);
+}
+
+
+
+.imagens__container{
+    padding: 3em 12em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+    
+
+}
+
+.capa__filme{
+    border-radius: 4px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 0.5em 0.5em;
+    transition: background-color 0.6s ease-out;
+}
+
+.capa__filme:hover{
+    background-color: navajowhite;;
+}
+
+.creditos{
+    background-color: rgb(29, 26, 26);
+    font-family: var(--fonte);
+    color: aliceblue;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+
+
+
+
