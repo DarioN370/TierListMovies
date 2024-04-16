@@ -10,34 +10,30 @@ a{
 }
 
 :root{
-    --cor-texto-principal: #fff; 
-    --cor-texto-secundaria: #000000; 
+    --cor-principal: #fff; 
+    --cor-secundaria: #000000; 
     --cor-hover: #272727;
 
     --fonte: 'Roboto';
 }
 
 body{
-    /*background-image: url(../imgs/red-and-black-barbed-wire-2022tjs994mcbzvw.png);
-    background-repeat: repeat;*/
-    background-color: #000000;
+    background: var(--cor-secundaria);
 }
 
 header{
-    background-color: #e50914;
+    background: #e50914;
 }
 
 .cabecalho{
-    
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1.7em 2em;
-    
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
 }
 
 .cabecalho__titulo{
-    color: var(--cor-texto-principal);
+    color: var(--cor-principal);
     font-family: var(--fonte);
     font-weight: 500;
 }
@@ -52,10 +48,13 @@ header{
 }
 
 .cabecalho__menu__link{
-    color: var(--cor-texto-secundaria);
+    color: var(--cor-secundaria);
 }
 
-
+main{
+    margin: 0 auto;
+    max-width: 1800px;
+}
 
 .imagens__container{
     padding: 3em 12em;
@@ -70,6 +69,10 @@ header{
     border: 1px solid rgb(255, 255, 255);
     padding: 0.5em 0.5em;
     transition: background-color 0.6s ease-out;
+}
+
+.capa__filme img{
+    width: 200px;
 }
 
 .capa__filme:hover{
